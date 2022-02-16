@@ -1,0 +1,2 @@
+**Veri.txt dosyasından kaynaklı işlem türü veya eksik parametre gönderme durumları kontrol edilmiştir.
+derleyici mantığı gibi Veri.txt içerisindeki hatalı satır ekrana bastırılıp program kendini kapatmaktadır.
