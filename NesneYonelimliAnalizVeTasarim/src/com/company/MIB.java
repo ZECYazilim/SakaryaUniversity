@@ -6,11 +6,9 @@ import java.util.Scanner;
 public class MIB {
 
     public static void main(String[] args) throws SQLException{
-
-        CihazBilgileri cihaz = new CihazBilgileri.CihazBilgileriBuilder("Eflatun")
-                .agirlik(1000)
-                .model(2022,"Turkiye")
-                .build();
+    	CihazBilgileriFactory factoryInstance = new CihazBilgileriFactory();
+        CihazBilgileri cihaz = factoryInstance.FactoryMethod();
+        
         System.out.println(cihaz);
 
         GetCustem();

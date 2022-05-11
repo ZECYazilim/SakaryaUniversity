@@ -5,10 +5,10 @@ public class CihazBilgileri {
     private double agirlik;
     Model model;
 
-    private CihazBilgileri(CihazBilgileriBuilder builder){
-        this.renk = builder.renk;
-        this.agirlik = builder.agirlik;
-        this.model=builder.model;
+    public CihazBilgileri(String renk ,double agirlik,Model model){
+        this.renk = renk;
+        this.agirlik =agirlik;
+        this.model=model;
     }
 
     public String getRenk() {
@@ -43,29 +43,6 @@ public class CihazBilgileri {
                 "\n\n******* Model ******"+model;
     }
 
-    public static class CihazBilgileriBuilder{
-        private String renk;
-        private double agirlik;
-        Model model;
-
-        public CihazBilgileriBuilder(String r){
-            this.renk = r;
-        }
-        public CihazBilgileriBuilder agirlik (double a){
-            this.agirlik = a;
-            return this;
-        }
-        public CihazBilgileriBuilder model (int modelyil,String modelyer){
-            this.model = new Model(modelyil,modelyer);
-            return this;
-        }
-        public CihazBilgileri build(){
-            return new CihazBilgileri(this);
-        }
-
-
-
-    }
 
 
 
