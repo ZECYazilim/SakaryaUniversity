@@ -55,7 +55,7 @@ public class akilliCihaz implements IAkilliCihaz{
             System.out.println("Sistem Hazirlaniyor...");
             System.out.println("**********************\n");
             System.out.println("\n**********************");
-            System.out.print("Yeni İşlem : ");
+            System.out.print("Yeni Islem : ");
             secenek = scan.nextInt();
             System.out.println("**********************\n");
             Algilama();

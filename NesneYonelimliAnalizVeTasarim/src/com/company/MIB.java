@@ -18,7 +18,7 @@ public class MIB {
         /*  Observer  */
         kontrolMerkezi k1= new kontrolMerkezi();
         veriTabaniKayit v1 = new veriTabaniKayit();
-        Publisher publisher = new Publisher();
+        ISubject publisher = new Publisher();
         publisher.attach(k1);
         publisher.attach(v1); 
         publisher.notify("Nesneler bildirildi."); 
